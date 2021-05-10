@@ -126,11 +126,16 @@ table {
 }
 
 body {
-  background-image: linear-gradient(to top, #a8edea 0%, #fed6e3 100%);
+  /* background-image: linear-gradient(to top, #a8edea 0%, #fed6e3 100%); */
+  background: #fed6e3;
   font-family: "Fascinate", cursive;
 }
 
 .wrapper {
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
   margin: auto;
   max-width: 800px;
   height: 100vh;
@@ -146,14 +151,23 @@ body {
   justify-content: center;
   padding: 4rem 2rem;
   border: 2px solid #fed6e3;
+  background: #a8ede991;
 }
-
+.gif--container {
+  position: absolute;
+  z-index: -1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
 .timer {
   font-size: 2rem;
   display: flex;
   justify-content: space-evenly;
   padding: 2rem;
   border: 2px solid #fed6e3;
+  background: #a8ede991;
 }
 
 .days,
